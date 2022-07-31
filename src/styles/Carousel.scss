@@ -1,0 +1,83 @@
+@import "default_variables.scss";
+
+.carousel-top {
+    width: 100%;
+    background-color: $header-footer-bg-color;
+    height: 700px;
+    border-bottom: 4px solid black;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-img{
+    width: 800px;
+    height: 500px;
+    border: 5px solid;
+    pointer-events: auto;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.slide-img:hover{
+    opacity: 0.8;
+}
+
+.slider{
+    position: absolute;
+    width: 98%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.slider-inner{
+    position: absolute;
+    height: 100%;
+    width: 800px * 5 + 80;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    pointer-events: none;
+    transition: 0s ease-in;
+    -webkit-transition: 0s ease-in;
+    -moz-transition: 0s ease-in;
+    -ms-transition: 0s ease-in;
+    -o-transition: 0s ease-in;
+}
+
+@media (max-width: 730px) {
+    .carousel-top{
+        height: 500px;
+    }
+
+    .slider-inner{
+        width: 500px * 5 + 80;
+    }
+
+    .slide-img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .slider{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .carousel-top {
+        display: none;
+    }
+}

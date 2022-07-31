@@ -1,0 +1,167 @@
+@import "default_variables.scss";
+
+%header-li {
+    margin: 0 20px;
+    color: black;
+}
+
+%header-el-border {
+    border: 2px solid black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 5px 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+%header-el-border-hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+}
+
+.header__wrapper {
+    @include widthHeight(100%, 90px);
+    background-color: $header-footer-bg-color;
+    @include flex(center, center);
+    position: absolute;
+
+    .nav__wrapper {
+        @include widthHeight(100%, auto);
+        @include flex(space-between, center);
+        font-size: $header-font-size;
+        font-weight: bold;
+        padding: 30px 0 20px 0;
+    }
+
+    .left-menu {
+        @include flex(flex-start, center);
+        margin-left: 50px;
+
+        li {
+            @extend %header-li;
+
+            a {
+                @extend %header-el-border;
+            }
+
+            a:hover {
+                @extend %header-el-border-hover;
+            }
+        }
+
+        i {
+            font-size: $header-font-size;
+            color: black;
+            transition: 0.5s ease;
+            -webkit-transition: 0.5s ease;
+            -moz-transition: 0.5s ease;
+            -ms-transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+}
+
+        i:hover {
+            color: $gray;
+            transition: 0.5s ease;
+            -webkit-transition: 0.5s ease;
+            -moz-transition: 0.5s ease;
+            -ms-transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+        }
+    }
+
+    .right-menu {
+        @include flex(flex-start, center);
+        margin-right: 50px;
+
+        li {
+            @extend %header-li;
+            a {
+                @extend %header-el-border;
+            }
+
+            a:hover {
+                @extend %header-el-border-hover;
+            }
+        }
+
+        #country {
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .header__wrapper .nav__wrapper{
+        font-size: 2vw;
+    }
+
+    .header__wrapper .left-menu{
+        margin-left: 0;
+
+        li{
+            button{
+                i{
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    .header__wrapper .right-menu{
+        margin-right: 0;
+
+        li{
+            select{
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 456px) {
+    .header__wrapper .nav__wrapper{
+        font-size: 3vw;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .header__wrapper .right-menu{
+        flex-wrap: wrap;
+    }
+
+    .header__wrapper .left-menu{
+        margin-left: 0;
+
+        li{
+            button{
+                i{
+                    font-size: 4.5vw;
+                }
+            }
+        }
+    }
+}

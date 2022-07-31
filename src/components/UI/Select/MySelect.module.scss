@@ -1,0 +1,29 @@
+@import "/src/styles/default_variables.scss";
+
+.MySelect{
+    background-color: $header-footer-bg-color;
+    font-size: .8vw;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 2px solid black;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.MySelect:focus{
+    background-color: black;
+    color: white;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}

@@ -1,0 +1,75 @@
+@import "default_variables.scss";
+
+.carousel-top {
+    width: 100%;
+    background-color: $header-footer-bg-color;
+    height: 700px;
+    border-bottom: 4px solid black;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    @include flex(center, center);
+}
+
+.main-text__wrapper {
+    width: 100%;
+    max-width: 1235px;
+    font-size: 2.26vw;
+    text-align: center;
+
+    i {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+
+    h2:hover {
+        color: $gray;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+}
+
+.purple {
+    color: #c7b9ff;
+}
+
+.green {
+    color: $footer-color;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.underLine {
+    border-bottom: 5px solid black;
+    cursor: pointer;
+}
+
+@media (max-width: 730px) {
+    .main-text__wrapper{
+        font-size: 4vw;
+    }
+}

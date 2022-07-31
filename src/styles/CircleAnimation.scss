@@ -1,0 +1,155 @@
+@import "default_variables.scss";
+
+.circle-container {
+    width: 250px;
+    position: absolute;
+    right: calc(50vw - 36vw);
+    bottom: 170px;
+    z-index: 100;
+}
+
+.circle {
+    position: relative;
+    padding: 10px;
+    border: 3px solid black;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.circle__wrapper {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.circle-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-logo i {
+    font-size: 50pt;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.left-hand {
+    background-color: $header-footer-bg-color;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: rotate(-45deg) translate3d(20px, 20px, 0px);
+    -webkit-transform: rotate(-45deg) translate3d(20px, 20px, 0px);
+    -moz-transform: rotate(-45deg) translate3d(20px, 20px, 0px);
+    -ms-transform: rotate(-45deg) translate3d(20px, 20px, 0px);
+    -o-transform: rotate(-45deg) translate3d(20px, 20px, 0px);
+    transition: 0.5s;
+}
+
+.right-hand {
+    background-color: #c7b9ff;
+    opacity: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: rotate(45deg) scale(-1, 1) translate3d(-20px, 0px, 0px);
+    -webkit-transform: rotate(45deg) scale(-1, 1) translate3d(-20px, 0px, 0px);
+    -moz-transform: rotate(45deg) scale(-1, 1) translate3d(-20px, 0px, 0px);
+    -ms-transform: rotate(45deg) scale(-1, 1) translate3d(-20px, 0px, 0px);
+    -o-transform: rotate(45deg) scale(-1, 1) translate3d(-20px, 0px, 0px);
+    transition: 0.5s;
+}
+
+.circle:hover .left-hand {
+    transform: rotate(-45deg) translate3d(10px, 10px, 0px);
+    -webkit-transform: rotate(-45deg) translate3d(10px, 10px, 0px);
+    -moz-transform: rotate(-45deg) translate3d(10px, 10px, 0px);
+    -ms-transform: rotate(-45deg) translate3d(10px, 10px, 0px);
+    -o-transform: rotate(-45deg) translate3d(10px, 10px, 0px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.circle:hover .right-hand {
+    opacity: 1;
+    transform: rotate(45deg) scale(-1, 1) translate3d(0px, 0px, 0px);
+    -webkit-transform: rotate(45deg) scale(-1, 1) translate3d(0px, 0px, 0px);
+    -moz-transform: rotate(45deg) scale(-1, 1) translate3d(0px, 0px, 0px);
+    -ms-transform: rotate(45deg) scale(-1, 1) translate3d(0px, 0px, 0px);
+    -o-transform: rotate(45deg) scale(-1, 1) translate3d(0px, 0px, 0px);
+    transition: 0.5s;
+}
+
+.circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+    font-weight: bold;
+}
+
+.circle-p span {
+    position: absolute;
+    left: 50%;
+    font-size: 18px;
+    text-transform: uppercase;
+    transform-origin: 0 80px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 730px) {
+    .circle-container{
+        bottom: 370px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .circle-container {
+        display: none;
+    }
+}

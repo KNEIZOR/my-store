@@ -1,0 +1,136 @@
+export const products = [
+    {
+        id: 1,
+        img: "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/2.jpg",
+        title: "ROYALSPIRIT",
+        price: "10",
+        imgHover:
+            "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/9.jpg",
+        photos: [
+            "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/1.jpg",
+            "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/2.jpg",
+            "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/3.jpg",
+            "https://basket-02.wb.ru/vol261/part26190/26190275/images/c246x328/4.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 2,
+        img: "https://basket-02.wb.ru/vol271/part27137/27137736/images/c246x328/1.jpg",
+        title: "PROFFER",
+        price: "15",
+        imgHover:
+            "https://basket-02.wb.ru/vol271/part27137/27137736/images/c246x328/3.jpg",
+        photos: [
+            "https://basket-02.wb.ru/vol271/part27137/27137736/images/c246x328/1.jpg",
+            "https://basket-02.wb.ru/vol271/part27137/27137736/images/c246x328/2.jpg",
+            "https://basket-02.wb.ru/vol271/part27137/27137736/images/c246x328/3.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 3,
+        img: "https://basket-01.wb.ru/vol120/part12034/12034161/images/c246x328/2.jpg",
+        title: "SHORTS",
+        price: "15",
+        imgHover:
+            "https://basket-01.wb.ru/vol120/part12034/12034161/images/c246x328/3.jpg",
+        photos: [
+            "https://basket-01.wb.ru/vol120/part12034/12034161/images/c246x328/1.jpg",
+            "https://basket-01.wb.ru/vol120/part12034/12034161/images/c246x328/2.jpg",
+            "https://basket-01.wb.ru/vol120/part12034/12034161/images/c246x328/3.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 4,
+        img: "https://basket-02.wb.ru/vol258/part25883/25883577/images/c246x328/1.jpg",
+        title: "death note",
+        price: "2",
+        imgHover:
+            "https://basket-02.wb.ru/vol258/part25883/25883577/images/c246x328/2.jpg",
+        photos: [
+            "https://basket-02.wb.ru/vol258/part25883/25883577/images/c246x328/1.jpg",
+            "https://basket-02.wb.ru/vol258/part25883/25883577/images/c246x328/2.jpg",
+            "https://basket-02.wb.ru/vol258/part25883/25883577/images/c246x328/3.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 5,
+        img: "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/5.jpg",
+        title: "Sunglasses",
+        price: "2",
+        imgHover:
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/6.jpg",
+        photos: [
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/5.jpg",
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/1.jpg",
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/4.jpg",
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/6.jpg",
+            "https://basket-04.wb.ru/vol700/part70043/70043604/images/c246x328/9.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 6,
+        img: "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/1.jpg",
+        title: "T-shirt",
+        price: "2",
+        imgHover:
+            "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/8.jpg",
+        photos: [
+            "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/1.jpg",
+            "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/2.jpg",
+            "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/6.jpg",
+            "https://basket-02.wb.ru/vol150/part15061/15061503/images/c246x328/8.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 7,
+        img: "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/1.jpg",
+        title: "T-shirt",
+        price: "2",
+        imgHover:
+            "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/7.jpg",
+        photos: [
+            "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/1.jpg",
+            "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/2.jpg",
+            "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/6.jpg",
+            "https://basket-03.wb.ru/vol340/part34017/34017544/images/c246x328/7.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+    {
+        id: 8,
+        img: "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/3.jpg",
+        title: "T-shirt",
+        price: "2",
+        imgHover:
+            "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/2.jpg",
+        photos: [
+            "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/3.jpg",
+            "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/2.jpg",
+            "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/4.jpg",
+            "https://basket-01.wb.ru/vol34/part3454/3454022/images/c246x328/7.jpg",
+        ],
+        count: 1,
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        about: "Men's straight-cut knitted jacket REGULAR for those who are accustomed to move freely and look stylish. Men's jacket with pockets is combined with chinos 26166083 made of stretch cotton for every day!",
+    },
+];
