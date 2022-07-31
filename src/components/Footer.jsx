@@ -9,7 +9,7 @@ function Footer() {
         <footer>
             <div className="footer__wrapper">
                 <div className="footer-logo">
-                    <h2>FIGMA</h2>
+                    <h2>MY STORE</h2>
                 </div>
                 <div className="footer-info">
                     <div className="footer-text">

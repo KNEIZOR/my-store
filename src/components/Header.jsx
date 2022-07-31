@@ -49,7 +49,7 @@ function Header() {
 
                         <div className="title">
                             <Link to="/">
-                                <h1>THE FIGMA STORE</h1>
+                                <h1>MY STORE</h1>
                             </Link>
                         </div>
                         <ul className="right-menu">
